@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact & Locations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <section>
+        <h1>Contact</h1>
+        <p><a href="index.html">Home</a> &#8594; Contacts</p>
+      </section>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+      <h2>Get in Touch</h2>
+      <p>
+        We value your inquiries and feedback! Whether you have questions,
+        comments, or suggestions, our dedicated team is here to assist you
+        promptly. At B.G. Technical Limited, we are committed to delivering
+        exceptional service and ensuring your satisfaction.
+      </p>
+      <p>
+        Please fill out the contact form below, and we will get back to you as
+        soon as possible. We look forward to connecting with you!
+      </p>
+    </section>
+
+    <section>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="index.html" method="post">
+            <!-- Name -->
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Full Name"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Valid Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter Phone Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="jt"
+                  name="job_title"
+                  placeholder="Enter Job Title"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <select id="Production" name="production" required>
+                  <option value="" disabled selected>
+                    Select Production Service
+                  </option>
+                  <option value="pps">Pipeline & Process Services</option>
+                  <option value="pc">Pipeline Construction</option>
+                  <option value="ii">Inline Inspection</option>
+                  <option value="ucfc">
+                    Upstream Chemical & Facility Cleaning
+                  </option>
+                  <option value="pm">Pigs Manufacture</option>
+                  <option value="pe">Production Enhancement</option>
+                  <option value="ws">Wireline Services</option>
+                  <option value="wfp">Wellhead & Facility Protection</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <select id="source" name="source" required>
+                  <option value="" disabled selected>
+                    How did you find us?
+                  </option>
+                  <option value="google">Google Search</option>
+                  <option value="social">Social Media</option>
+                  <option value="friend">From a Friend</option>
+                  <option value="advert">Advertisement</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="sio"
+                  name="other_source"
+                  placeholder="Specify if Other"
+                />
+              </div>
+            </div>
+
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write Message Here"
+              ></textarea>
+              <small class="input-caption"
+                ><strong>Hint: </strong>Please enter between 80 - 300
+                characters</small
+              >
+            </div>
+
+            <div class="contact-button">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 class="all-align">Get Social</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+
+          <h2 class="all-align">Phone</h2>
+          <p>
+            <a href="tel:+2348035480023"
+              ><i class="fas fa-phone"></i> +234 803 548 0023</a
+            >
+          </p>
+
+          <h2 class="all-align">Email</h2>
+          <a href="mailto:bgtsales@bgtechnical.com"
+            ><i class="fas fa-envelope"></i> bgtsales@bgtechnical.com</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations">
+      <div class="box">
+        <h1>Our Loc<span class="highlight">ations</span></h1>
+        <p>
+          <span class="highlight">BGT Technical Limited</span> operates across
+          major cities in Nigeria to serve clients efficiently, and reliable
+          service. By maintaining a strong presence in key regions, we are able
+          to respond quickly to project needs, build lasting relationships with
+          our partners, and deliver solutions that meet international standards.
+        </p>
+        <ul style="list-style-type: none">
+          <li>Port Harcourt</li>
+          <li>Lagos</li>
+          <li>Texas</li>
+          <li>Benin</li>
+        </ul>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/d/u/0/embed?mid=1C2Z9Wtd5wXAlbzrWHrG4H3PnZXkQFf4&ehbc=2E312F&noprof=1"
+      ></iframe>
+    </section>
+  </body>
+</html>
